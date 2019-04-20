@@ -1,0 +1,34 @@
+<div class="main users-new">
+    <div class="container">
+        <div class="form-heading">編集する</div>
+        <div class="form users-form">
+            <div class="form-body">
+
+                <% @user.errors.full_messages.each do |err| %>
+                <li><%= err %></li>
+                <% end %>
+
+                <%= form_for(@user, url:{controller:'users', action:'edit', id:@user.id}) do |form| %>
+                <tr>
+                    <th>ユーザー名</th>
+                    <td>
+                        <%= form.text_field :name, { size:40 } %>
+                    </td>
+                </tr>
+                <tr>
+                    <th>メールアドレス</th>
+                    <td>
+                        <%= form.text_field :email, { size:40 } %>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <%= form.submit "更新" %>
+                    </td>
+                </tr>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

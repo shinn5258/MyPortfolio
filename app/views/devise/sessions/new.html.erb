@@ -1,0 +1,47 @@
+
+<br><br><br>
+
+
+
+
+<h2>ログイン</h2>
+<p>※アカウントを登録してあるメールアドレスとパスワードを入力し送信してください。</p>
+<p>※まだアカウントを登録していない人は、下の「sign up」アカウント登録してください。</p>
+<table>
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <tr>
+    <th>メールアドレス</th>
+    <td><%= f.email_field :email, autofocus: true, size:30 %></td>
+  </tr>
+  
+  <tr>
+    <th>パスワード</th>
+    <td><%= f.password_field :password, autocomplete: "off", size:30 %></td>
+  </tr>
+  
+  <% if devise_mapping.rememberable? -%>
+  <tr>
+    <th>ログインを保持</th>
+    <td>
+      <div>
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me %>
+      </div>
+    </td>
+  </tr>
+  <% end -%>
+  
+  <tr>
+    <th></th>
+    <td>
+      <div class="actions">
+        <%= f.submit "Log in" %>
+      </div>
+    </td>
+  </tr>
+  <% end %>
+</table>
+  
+<%= render "devise/shared/links" %>
+  

@@ -1,0 +1,22 @@
+<div class="main posts-show">
+    <div class="container">
+        <div class="posts-show-item">
+            <h1>
+                ＜作品名＞<%= @post.title %>
+            </h1>
+            <h3>
+                「ジャンル」<%= @post.genre %>
+            </h3>
+            <p>
+                <%= @post.content %>
+            </p>
+            <div class="post-time">
+                <%= @post.created_at %>
+            </div>
+            <div class="post-menus">
+                <%= link_to("編集", "/posts/edit/#{@post.id}") %>
+                <%= link_to("削除", "/posts/destroy/#{@post.id}", {method: "post"}) %>
+            </div>
+        </div>
+    </div>
+</div>

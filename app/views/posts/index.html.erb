@@ -1,0 +1,18 @@
+<div class="main posts-index">
+    <div class="container">
+        <div class="posts-index-item">
+            <table width="100%">
+                <tr>
+                    <th class="title">「Title」</th>
+                </tr>
+                <% @posts.each do |obj| %>
+                <tr>
+                    <td><a class="content" href="/posts/<%= obj.id %>">・<%= obj.title %></a>
+                    <br><%= obj.created_at %></td>
+                    <!-- <td width="40px"><a href="/cards/edit/<%= obj.id %>">編集</a></td> -->
+                </tr>
+                <% end %>
+            </table>
+        </div>
+    </div>
+</div>
