@@ -5,7 +5,7 @@
 大した機能はありませんがTwitterのようなログイン機能を持っていて、
 メディア関連のつぶやきを共有しましょう。
 
-TOPページのURLはこちら↓
+TOPページのURLはこちら
 https://heroku-myportfolio.herokuapp.com/
 
 
