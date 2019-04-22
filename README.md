@@ -5,6 +5,10 @@
 大した機能はありませんがTwitterのようなログイン機能を持っていて、
 メディア関連のつぶやきを共有しましょう。
 
+TOPページのURLはこちら↓
+https://heroku-myportfolio.herokuapp.com/
+
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
