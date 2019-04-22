@@ -1,5 +1,11 @@
 # README
 
+
+プログラミングを勉強し始めて初めて作ったウェブアプリです。
+大した機能はありませんがTwitterのようなログイン機能を持っていて、
+メディア関連のつぶやきを共有しましょう。
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
